@@ -3,13 +3,14 @@
 # The function should take the value in as a parameter and return a boolean value (True if even, False if odd).
 # Leave a comment above the function stating the time complexity.
 
+def evenOrOdd(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False
 
-
-
-
-
-
-
+print (evenOrOdd(123))
+print (evenOrOdd(246))
 
 
 # Task 2: Less than 100
