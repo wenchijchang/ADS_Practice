@@ -22,7 +22,7 @@ print(even_or_odd(246))
 # Leave a comment above the function stating the time complexity.
 
 
-# 0(n)
+# O(n)
 def is_lower_than_100(numbers):
     for n in numbers:
         if n <= 100:
@@ -39,6 +39,20 @@ print(is_lower_than_100([180, 14, 7]))
 # Given a list of names, determine if any names are contained in the list more than once.
 # The function should take in the list as a parameter and return a boolean value (True if there are any repeated names, False if there are no repeats).
 # Leave a comment above the function stating the time complexity.
+
+
+# O(n)
+def has_repeated_names(names):
+    checked_names = set()
+    for n in names:
+        if n in checked_names:
+            return True
+        checked_names.add(n)
+    return False
+
+
+print(has_repeated_names(["James", "Debby", "Amy"]))
+print(has_repeated_names(["Kevin", "David", "Kevin"]))
 
 
 # Task 4: Sort List
